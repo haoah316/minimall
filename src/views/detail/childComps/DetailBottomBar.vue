@@ -74,8 +74,8 @@ export default {
 .bar-left .text{
   font-size: 12px;
   /* google浏览器设置小于12px字体 */
-  -webkit-transform: scale(0.95);
-  display: block;
+  /* -webkit-transform: scale(0.95);
+  display: block; */
 }
 
 .bar-right .buy {
