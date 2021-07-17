@@ -13,9 +13,8 @@
       <!-- <detail-recommend-info :recommend-list="recommendList"></detail-recommend-info> -->
       <!-- 使用原来首页中使用的goodlist组件进行数据展示，因为首页也是两栏展示，基本数据信息一致，所以可以进行复用 -->
       <good-list ref="recommends" :goods="recommendList"/>
-
     </scroll>
-    
+    <detail-bottom-bar></detail-bottom-bar>
   </div>
 </template>
 
@@ -28,6 +27,7 @@ import DetailGoodsInfo from './childComps/DetailGoodsInfo'
 import DetailParamInfo from './childComps/DetailParamInfo'
 import DetailCommentInfo from './childComps/DetailCommentInfo'
 import DetailRecommendInfo from './childComps/DetailRecommendInfo'
+import DetailBottomBar from './childComps/DetailBottomBar'
 import GoodList from 'components/content/goods/GoodsList'
 
 import {getDetail,getRecommend,Goods,Shop,GoodsParam} from 'network/detail'
@@ -45,6 +45,7 @@ components:{
   DetailParamInfo,
   DetailCommentInfo,
   DetailRecommendInfo,
+  DetailBottomBar,
   Scroll,
   GoodList,
 },
@@ -173,7 +174,7 @@ updated(){
 }
 
 .content {
-  height: calc(100% - 49px);
+  height: calc(100% - 44px - 44px);
 }
 
 </style>
