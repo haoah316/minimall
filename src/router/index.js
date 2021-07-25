@@ -7,6 +7,7 @@ const Category = ()=> import('views/category/category')
 const Shopcart = ()=> import('views/cart/shopcart')
 const Profile = ()=> import('views/profile/profile')
 const Detail = ()=> import('views/detail/Detail')
+const Map = ()=> import('views/map/MapSearch')
 
 
 Vue.use(VueRouter)
@@ -35,6 +36,10 @@ const routes = [
   {
     path: '/detail/:iid',
     component: Detail
+  },
+  {
+    path: '/map',
+    component: Map
   },
 
 ]
